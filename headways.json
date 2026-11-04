@@ -1,0 +1,32 @@
+{
+  "_comment": "北京地铁各线路分时段发车间隔（分钟）。来源：官方新闻稿口径，允许有出入，界面标注『预计』。peak: 早7-9/晚17-19，daytime: 其余运营时段。weekend 的 weekend 字段可选，缺省用 weekday 的 daytime。",
+  "lines": {
+    "01": { "name": "1号线八通线", "weekday": { "peak": 2, "daytime": 6 }, "weekend": { "peak": 4, "daytime": 8 } },
+    "02": { "name": "2号线", "weekday": { "peak": 2, "daytime": 5 }, "weekend": { "peak": 4, "daytime": 6 } },
+    "03": { "name": "3号线", "weekday": { "peak": 4, "daytime": 8 }, "weekend": { "peak": 6, "daytime": 8 } },
+    "04": { "name": "4号线", "weekday": { "peak": 3, "daytime": 6 }, "weekend": { "peak": 4, "daytime": 7 } },
+    "05": { "name": "5号线", "weekday": { "peak": 2, "daytime": 5 }, "weekend": { "peak": 4, "daytime": 6 } },
+    "06": { "name": "6号线", "weekday": { "peak": 3, "daytime": 6 }, "weekend": { "peak": 4, "daytime": 7 } },
+    "07": { "name": "7号线", "weekday": { "peak": 3, "daytime": 7 }, "weekend": { "peak": 5, "daytime": 8 } },
+    "08": { "name": "8号线", "weekday": { "peak": 3, "daytime": 6 }, "weekend": { "peak": 4, "daytime": 7 } },
+    "09": { "name": "9号线", "weekday": { "peak": 3, "daytime": 6 }, "weekend": { "peak": 4, "daytime": 7 } },
+    "10": { "name": "10号线", "weekday": { "peak": 2, "daytime": 5 }, "weekend": { "peak": 4, "daytime": 6 } },
+    "11": { "name": "11号线", "weekday": { "peak": 6, "daytime": 10 }, "weekend": { "peak": 8, "daytime": 10 } },
+    "12": { "name": "12号线", "weekday": { "peak": 4, "daytime": 8 }, "weekend": { "peak": 6, "daytime": 8 } },
+    "13": { "name": "13号线", "weekday": { "peak": 3, "daytime": 7 }, "weekend": { "peak": 5, "daytime": 8 } },
+    "14": { "name": "14号线", "weekday": { "peak": 4, "daytime": 7 }, "weekend": { "peak": 5, "daytime": 8 } },
+    "15": { "name": "15号线", "weekday": { "peak": 5, "daytime": 8 }, "weekend": { "peak": 6, "daytime": 9 } },
+    "16": { "name": "16号线", "weekday": { "peak": 4, "daytime": 8 }, "weekend": { "peak": 6, "daytime": 9 } },
+    "17": { "name": "17号线", "weekday": { "peak": 5, "daytime": 9 }, "weekend": { "peak": 7, "daytime": 9 } },
+    "73": { "name": "18号线", "weekday": { "peak": 6, "daytime": 10 }, "weekend": { "peak": 8, "daytime": 10 } },
+    "19": { "name": "19号线", "weekday": { "peak": 5, "daytime": 9 }, "weekend": { "peak": 7, "daytime": 9 } },
+    "88": { "name": "大兴机场线", "weekday": { "peak": 8, "daytime": 10 }, "weekend": { "peak": 10, "daytime": 10 } },
+    "89": { "name": "西郊线", "weekday": { "peak": 10, "daytime": 12 }, "weekend": { "peak": 10, "daytime": 12 } },
+    "91": { "name": "S1线", "weekday": { "peak": 8, "daytime": 10 }, "weekend": { "peak": 10, "daytime": 10 } },
+    "92": { "name": "燕房线", "weekday": { "peak": 8, "daytime": 10 }, "weekend": { "peak": 10, "daytime": 10 } },
+    "94": { "name": "昌平线", "weekday": { "peak": 3, "daytime": 7 }, "weekend": { "peak": 5, "daytime": 8 } },
+    "95": { "name": "房山线", "weekday": { "peak": 4, "daytime": 8 }, "weekend": { "peak": 6, "daytime": 9 } },
+    "96": { "name": "亦庄线", "weekday": { "peak": 6, "daytime": 10 }, "weekend": { "peak": 8, "daytime": 10 } },
+    "98": { "name": "首都机场线", "weekday": { "peak": 10, "daytime": 12 }, "weekend": { "peak": 12, "daytime": 12 } }
+  }
+}

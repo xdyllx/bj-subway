@@ -1,0 +1,4 @@
+.venv/
+data/timeinfos.json
+data/stations.json
+.DS_Store

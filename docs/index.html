@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#12131a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>北京地铁到站</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="app">
+
+  <header>
+    <button id="btnBack" class="icon-btn hidden" aria-label="返回">‹</button>
+    <h1>北京地铁到站</h1>
+    <span id="clock" class="clock"></span>
+  </header>
+
+  <div id="delayBanner" class="delay-banner hidden"></div>
+
+  <!-- 主屏：收藏 + 新查询 -->
+  <main id="homeView">
+    <section id="favSection" class="hidden">
+      <h2>常用查询</h2>
+      <div id="favList"></div>
+    </section>
+    <button id="btnNew" class="new-query">
+      <span class="plus">＋</span> 查询到站时间
+    </button>
+    <p class="footnote">时刻为按官方首末班与发车间隔的<b>预计</b>值，误差约 1–2 分钟<br>数据来源：北京地铁官网 · 更新于 <span id="genTime"></span></p>
+  </main>
+
+  <!-- 选择器 -->
+  <main id="pickView" class="hidden">
+    <div id="stepLine" class="step">
+      <h2>选择线路</h2>
+      <div id="lineList" class="line-grid"></div>
+    </div>
+    <div id="stepStation" class="step hidden">
+      <h2 id="stationTitle">选择车站</h2>
+      <input id="stationSearch" type="search" placeholder="搜索车站名">
+      <div id="stationList"></div>
+    </div>
+    <div id="stepDir" class="hidden">
+      <h2 id="dirTitle">选择方向</h2>
+      <div id="dirList"></div>
+    </div>
+  </main>
+
+  <!-- 结果 -->
+  <main id="resultView" class="hidden">
+    <div class="result-head">
+      <span id="rLineBadge" class="line-badge"></span>
+      <span id="rStation" class="r-station"></span>
+      <button id="btnFav" class="icon-btn" aria-label="收藏">☆</button>
+    </div>
+    <div id="rDir" class="r-dir"></div>
+    <div class="arrivals">
+      <div class="arrival main">
+        <div class="arr-label">本班预计</div>
+        <div id="rMainMin" class="arr-min">--</div>
+        <div id="rMainClock" class="arr-clock"></div>
+      </div>
+      <div class="arrival next">
+        <div class="arr-label">下一班</div>
+        <div id="rNextMin" class="arr-min">--</div>
+        <div id="rNextClock" class="arr-clock"></div>
+      </div>
+    </div>
+    <div id="rMeta" class="r-meta"></div>
+  </main>
+
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
