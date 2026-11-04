@@ -72,6 +72,19 @@
     <div id="rMeta" class="r-meta"></div>
   </main>
 
+  <!-- 分组选择弹窗 -->
+  <div id="favModal" class="modal-mask hidden">
+    <div class="modal">
+      <h3>加入分组</h3>
+      <div id="groupChips" class="group-chips"></div>
+      <input id="groupInput" type="text" placeholder="新分组名（如：上班、回家）" maxlength="12">
+      <div class="modal-actions">
+        <button id="favModalCancel" class="modal-btn">取消</button>
+        <button id="favModalOk" class="modal-btn primary">收藏</button>
+      </div>
+    </div>
+  </div>
+
 </div>
 <script src="./app.js"></script>
 </body>
