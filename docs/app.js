@@ -15,6 +15,7 @@ function headwayAt(lineCode, minutes) {
   const peak = weekend ? (h >= 8 && h < 11) || (h >= 16 && h < 19)
                        : (h >= 7 && h < 9) || (h >= 17 && h < 19);
   const table = (weekend && hw.weekend) ? hw.weekend : hw.weekday;
+  if (h >= (table.eveningFrom != null ? table.eveningFrom : 20)) return table.evening || table.daytime;
   return peak ? table.peak : table.daytime;
 }
 
